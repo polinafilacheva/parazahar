@@ -1,0 +1,23 @@
+.gridContainer {
+  display: grid;
+
+  width: calc(100% - 80px);
+  height: 100vh;
+  margin: 0 auto;
+
+  grid-template-columns: repeat(14, 1fr);
+  grid-column-gap: 12px;
+}
+
+.gridContainer figure {
+  background: red;
+
+  grid-column: 1 / 6;
+}
+
+.gridContainer .gradient {
+width: 100%;
+height: 300px;
+
+background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+}
