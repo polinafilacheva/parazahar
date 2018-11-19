@@ -2,22 +2,69 @@
   display: grid;
 
   width: calc(100% - 80px);
-  height: 100vh;
+  height: 765px;
   margin: 0 auto;
 
   grid-template-columns: repeat(14, 1fr);
   grid-column-gap: 12px;
 }
 
-.gridContainer figure {
-  background: red;
 
-  grid-column: 1 / 6;
+.gridContainer.type1 figure {
+    display: grid;
+
+    height: 0;
+    margin-top: 200px;
+
+    grid-column: 1 / 6;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 12px;
+  }
+
+.gridContainer.type1 figure .gradient {
+ height: 750px;
+
+ background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+
+ grid-column: 1 / 6;
+ grid-row: 1 / 2;
 }
 
-.gridContainer .gradient {
-width: 100%;
-height: 300px;
+.gridContainer.type1 figure figcaption {
+  grid-column: 1 / 4;
+  grid-row: 2/ 3;
+}
 
-background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+.gridContainer article {
+  margin-top: 130px;
+
+  grid-column: 7 / 14;
+}
+
+.gridContainer.type2 figure {
+height: 100%;
+
+grid-column: 4 / 15;
+}
+
+.gridContainer.type2 figure .gradient {
+ width: calc(100% + 40px);
+ height: 100%;
+
+ background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+}
+
+
+.gridContainer.type3 figure {
+margin-top: 130px;
+
+grid-column: 1 / 8;
+}
+
+.gridContainer.type3 figure .gradient {
+ width: calc(100% + 40px);
+ height: 500px;
+ margin-left: -40px;
+
+ background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
 }
