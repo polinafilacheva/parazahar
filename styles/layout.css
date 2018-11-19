@@ -1,0 +1,8 @@
+.gridContainer {
+  display: grid;
+
+  height: 100vh;
+
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-column-gap: 12px;
+}
